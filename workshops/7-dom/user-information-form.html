@@ -1,0 +1,48 @@
+<!--
+ * Copyright (C) Mathstronauts. All rights reserved.
+ * This information is confidential and proprietary to Mathstronauts and may not be used, modified, copied or distributed.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGNITE Program - Intro to Web Dev - User Information Form</title>
+    <link rel="stylesheet" href="../workshop-styling/user-information-styles.css">
+</head>
+<body id="user-information-background">
+    <div id="user-information-background__grey">
+        <div id="user-information-background__black">
+            <h1><span style="color: orange">IGNITE</span> Intro to Web Dev</h1>
+            <h3>User Information Form</h3>
+            <form id="user-information-form" onsubmit="handleSubmit(event)">  <!-- To use the event listener, delete "onsubmit="handleSubmit(event)"" -->
+                <input 
+                    type="text"
+                    placeholder="First Name"
+                />
+
+                <input 
+                    type="text"
+                    placeholder="Surname"
+                />
+
+                <input 
+                    type="text"
+                    placeholder="Email"
+                />
+
+                <input 
+                    type="text"
+                    placeholder="Phone Number"
+                />
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="2-user-information-form.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+/*
+ * Copyright (C) Mathstronauts. All rights reserved.
+ * This information is confidential and proprietary to Mathstronauts and may not be used, modified, copied or distributed.
+ */
+
+/* Import the font and style some preliminary aspects. */
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap');
+
+* {
+    font-family: "Saira Condensed", sans-serif;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Navigation bar. */
+#navigation-bar {
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    padding-top: 3.5vh;
+    overflow-y: hidden;
+    background-color: #1c1b16;
+    z-index: 2;
+    transition-duration: 2s;
+}
+
+.navigation-bar__items--left {
+    padding-left: 20px;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+#navigation-bar__button {
+    float: right;
+    padding-right: 30px;
+    color: white;
+    background-color: #1c1b16;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+#mathstronauts-logo-navigation-bar {
+    width: 45px;
+    padding-right: 10px;
+}
+
+#navigation-bar__full-screen {
+    padding-top: 5vh;
+}
+
+.navigation-bar__link {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    transition-duration: 0.8s;
+}
+
+.navigation-bar__link:hover {
+    color: rgb(168, 161, 161);
+}
+
+@media only screen and (min-height: 350px) {
+    .navigation-bar__link { font-size: 17px; }
+}
+
+@media only screen and (min-height: 700px) {
+    #mathstronauts-logo-navigation-bar { width: 70px; }
+    #navigation-bar { height: 75px; }
+    .navigation-bar__items--left, #navigation-bar__button { font-size: 25px; }
+    .navigation-bar__link { font-size: 25px; }
+    #navigation-bar__full-screen { padding-top: 15vh; }
+}
+
+/* Home. */
+#home {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url("./Images/home-background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#home__text {
+    padding: 50px 50% 0 50px;
+    color: white;
+    font-size: 7vw;
+}
+
+/* Standard background section. */
+.standard-background {
+    background-image: url("./Images/space_background_image.jpeg");
+}
+
+/* Solar system information section. */
+#home-solar-system-info-page {
+    padding: 50px 20px 20px 20px;
+    text-align: center;
+    color: white;
+    font-size: 4vw;
+}
+
+#home-solar-system-info-page h1 {
+    font-size: 6vw;
+}
+
+.home-planet-grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    font-size: 5vw;
+}
+
+.home-planet-grid-container__image {
+    height: 70vw;
+    width: 70vw;
+    margin: 15px auto 0 auto;
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 992px) {
+    #home-solar-system-info-page { font-size: 21px; }
+    #home-solar-system-info-page h1 { font-size: 40px; }
+    .home-planet-grid-container { grid-template-columns: auto auto auto; }
+    .home-planet-grid-container p { font-size: 25px; }
+    .home-planet-grid-container__image { 
+        height: 25vw; 
+        width: 25vw; 
+    }
+}
+
+/*** Planet Listing Sections ***/
+.planets-sub-heading-text {
+    font-size: 25px;
+    color: orange;
+}
+
+.planet-listing-grid-container {
+    padding-top: 9.7vh;
+    padding-bottom: 5vh;
+}
+
+.planet-listing__background-shape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.planet-listing__image {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.planet-listing__information-text {
+    padding-right: 70px;
+    padding-left: 70px;
+    text-align: center;
+    color: white;
+}
+
+.planet-listing__information-text p {
+    font-size: 1.2rem;
+    padding-bottom: 25px;
+}
+
+.planet-listing__table {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.planet-listing__dividing-line {
+    height: 1px; 
+    width: 80%; 
+    margin: 0 auto 10px auto; 
+    border: none; 
+    border-radius: 10px; 
+    background-color: white;
+}
+
+@media only screen and (min-width: 992px) {
+    .planet-listing-grid-container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        padding-top: 12vh;
+    }
+
+    .planet-listing__information-text { text-align: left; }
+    .planet-listing__information-text-right { order: 2; }
+
+    .planet-listing__table { 
+        display: grid;
+        grid-template-columns: auto auto; 
+        text-align: left;
+    }
+
+    .planet-listing__dividing-line { margin-left: 0; }
+}
+
+/* Footer. */
+footer {
+    padding: 4vh 0 4vh 0;
+    color: white;
+    font-size: 19px;
+}
+
+.footer-grid-container {
+    display: grid;
+    grid-template-columns: 50% auto auto;
+    margin: 0 7.5% 0 7.5%;
+    padding-top: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+#footer-grid-container__ignite {
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-grid-container__sub-title {
+    font-size: 17px;
+}
+
+.footer-grid-container__sub-text {
+    display: block;
+    color: white;
+    font-size: 13px;
+    transition: 0.5s;
+}
+
+.footer-grid-container a:hover {
+    text-decoration: underline;
+}
+
+#mathstronauts-logo-footer {
+    display: block;
+    width: 60px;
+    margin: 0 auto 0 auto;
+}
+
+@media only screen and (min-width: 992px) {
+    #footer-grid-container__ignite { font-size: 25px; }
+    #mathstronauts-logo-footer { width: 100px; }
+    .footer-grid-container__sub-title { font-size: 21px; }
+    .footer-grid-container__sub-text { font-size: 17px; }
+}

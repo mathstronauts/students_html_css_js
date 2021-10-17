@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap');
+
+* {
+    font-family: "IBM Plex Sans", sans-serif;
+    color: white;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#workshop-background {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background-image: url("javascript_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#workshop-background__shape-grey {
+    width: 55%;
+    background-color: rgb(84, 84, 84, 0.6);
+}
+
+#workshop-background__shape-dark {
+    padding-left: 20px;
+    margin-right: 50px;
+    background-color: rgb(41, 39, 39, 0.85);
+}
+
+#workshop-background__text {
+    margin-top: 6vh;
+    margin-bottom: 0;
+    padding-top: 2vh;
+    font-size: 25px;
+}
+
+#workshop-background__text--topic-name {
+    margin-bottom: 6vh;
+    padding-bottom: 3vh;
+    font-size: 12px;
+}
+
+.ignite {
+    color: orange;
+}
+
+/* Modifications for roughly medium-sized devices. */
+@media only screen and (min-width: 600px) {
+    #workshop-background__shape-dark { padding-left: 60px; }
+    #workshop-background__text { font-size: 45px; }
+    #workshop-background__text--topic-name { font-size: 15px; }
+}
+
+/* Modifications for larger devices. */
+@media only screen and (min-width: 992px) {
+    #workshop-background__shape-dark { padding-left: 90px; }
+    #workshop-background__text { font-size: 85px; }
+    #workshop-background__text--topic-name { font-size: 30px; }
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap');
+
+* {
+    font-family: "IBM Plex Sans", sans-serif;
+    color: white;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Webpage title section. */
+#apod-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#apod-background-grey {
+    width: 55%;
+    top: 25px;
+    left: 25%;
+    padding: 25px 0 25px 0;
+    position: absolute;
+    background-color: rgb(84, 84, 84, 0.6);
+}
+
+#apod-background-dark {
+    width: 75%;
+    margin: 0 auto 0 auto;
+    padding: 5px 0 5px 0;
+    background-color: rgb(41, 39, 39, 0.85);
+}
+
+/* APOD form section. */
+#apod-date-form input {
+    width: 75%;
+    margin: 2vh 12.5%;
+    padding: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+::placeholder { 
+    color: white; 
+    font-size: 17px;
+}
+
+#apod-date-form button {
+    display: block;
+    height: 50px;
+    width: 75px;
+    margin: 1vh auto;
+    font-size: 15px;
+    background-color:rgb(84, 84, 84, 0.85);
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+#apod-date-form button:hover {
+    background-color:rgb(41, 39, 39, 0.85);
+}
+
+/* Background images and each image's text section. */
+.apod-background {
+    height: 100%;
+    background-image: url("./javascript_background.png");
+    background-size: cover;
+}
+
+.apod-dark-background-container {
+    width: 75%;
+    top: 60%;
+    margin: 0 auto 0 auto;
+    padding: 1vh;
+    position: relative;
+    background-color: rgb(41, 39, 39, 0.85);
+    visibility: hidden;
+}
+
+.apod-background__title {
+    text-align: center;
+}
+
+.apod-background__text {
+    text-align: center;
+    font-size: 0.83rem;
+}
