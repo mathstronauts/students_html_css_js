@@ -5,6 +5,8 @@
 
 // 11. Intro to Web Dev - Functions (Data Validation Program).
 
+// Define an function that can validate the data of the user's selection.
+
 // Delay the JavaScript code by one second.
 setTimeout(() => {
     // Welcome the user.
@@ -37,5 +39,3 @@ const userData = [
         password: "IGNITE_JavaScript"
     }
 ];
-
-// Define an function that can validate the data of the user's selection.
